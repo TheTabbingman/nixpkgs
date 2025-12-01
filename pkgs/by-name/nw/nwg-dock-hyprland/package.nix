@@ -9,11 +9,12 @@
 }:
 buildGoModule rec {
   pname = "nwg-dock-hyprland";
+  version = "0.4.8-no-autohide-delay";
 
   src = fetchFromGitHub {
     owner = "TheTabbingMan";
     repo = "nwg-dock-hyprland";
-    tag = "cf82483";
+    tag = "v${version}";
     hash = "sha256-a+LNABfe5rHStZrf+qlayNuCwTQf+7qY4xjx2K7Ky7E=";
   };
 
